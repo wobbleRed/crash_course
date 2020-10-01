@@ -17,6 +17,8 @@ defmodule CrashCourseWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/registration", RegistrationController, :new
+    post "/registration", RegistrationController, :create
   end
 
   # Other scopes may use custom stacks.
