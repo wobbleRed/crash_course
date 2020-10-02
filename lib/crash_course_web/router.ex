@@ -19,6 +19,7 @@ defmodule CrashCourseWeb.Router do
     get "/", PageController, :index
     get "/registration", RegistrationController, :new
     post "/registration", RegistrationController, :create
+    get "/derek", DerekController, :derek
   end
 
   # Other scopes may use custom stacks.
